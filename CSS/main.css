@@ -2,12 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 .type-intro {
     text-align: center;
     font-family: 'Special Elite', cursive;
     padding-top: 30px;
+}
+
+.img-container {
+    width: 200px;
+    height: 200px;
+    border: 50%;
+    background-color: red;
+    margin: auto;
+    
 }
 
 @media screen and  (min-width: 576px) {
@@ -18,5 +28,11 @@
     }
     .intro-text {
         grid-column: 2/3;
+        padding-top: 40px;
+    }
+
+    .img-container{
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 }
