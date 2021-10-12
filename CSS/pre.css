@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+}
+
+.pre-cta-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.pre-cta {
+    border-radius: 20px;
+}
+
+.pre-cta a {
+    text-decoration: none;
+}
+
+h1 {
+    padding: 30px 50px;
+    font-family: 'Audiowide', cursive;
+}
