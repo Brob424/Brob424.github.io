@@ -5,7 +5,7 @@
     line-height: 1.5;
 }
 
-.type-intro {
+#type-intro {
     text-align: center;
     font-family: 'Special Elite', cursive;
     padding-top: 30px;
@@ -16,15 +16,43 @@
     height: 200px;
     border: 50%;
     background-color: red;
+    border-radius: 50%;
     margin: auto;
-    
 }
 
+#navbar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.navbar-links p {
+
+}
+
+.navbar-links p a {
+    text-decoration: none;
+    color: white;
+}
+
+
 @media screen and  (min-width: 576px) {
-    .type-intro {
+    #type-intro {
         font-size: 3rem;
         display: grid;
         grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
     }
     .intro-text {
         grid-column: 2/3;
