@@ -1,10 +1,11 @@
+/* Global page setting */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     line-height: 1.5;
 }
-
+/* Top text and image */
 #type-intro {
     text-align: center;
     font-family: 'Special Elite', cursive;
@@ -19,34 +20,34 @@
     border-radius: 50%;
     margin: auto;
 }
-
+/* Nav Bar  */
 #navbar-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    height: 40px;
+    height: 30px;
     width: 100%;
     background-color: black;
     margin-top: 30px;
 }
 
-.navbar-links {
+.navbar-links ul {
     display: flex;
-    justify-content: center;
-    align-content: space-between;
-
+    
+  
 }
 
-.navbar-links p {
-
+.navbar-links ul li {
+    list-style: none;
 }
 
-.navbar-links p a {
+.navbar-links ul a {
     text-decoration: none;
+    list-style: none;
     color: white;
 }
 
-
+/* Media query for desktop (responsive) */
 @media screen and  (min-width: 576px) {
     #type-intro {
         font-size: 3rem;
@@ -56,11 +57,19 @@
     }
     .intro-text {
         grid-column: 2/3;
-        padding-top: 40px;
+        padding-top: 35px;
     }
 
     .img-container{
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+
+    #navbar-container {
+        height: 60px;
+    }
+
+    .navbar-links p {
+        font-size: 35px;           
     }
 }

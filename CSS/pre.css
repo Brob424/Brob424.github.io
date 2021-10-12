@@ -1,3 +1,4 @@
+/* Global page settings */
 * {
     padding: 0;
     margin: 0;
@@ -8,12 +9,12 @@
 body {
     background-color: black;
 }
-
+/* Call to action button */
 .pre-cta-container {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
 }
 
 .pre-cta {
@@ -29,5 +30,6 @@ body {
 h1 {
     padding: 30px 50px;
     font-family: 'Audiowide', cursive;
+    background-clip: text;
 }
-
+/* animation */
