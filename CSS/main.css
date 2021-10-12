@@ -54,6 +54,30 @@
 
 }
 
+
+
+
+
+
+/* About me and why I code section */
+
+#main-section {
+    background: black;
+}
+
+#main-section p, h3 {
+    color: whitesmoke;
+}
+
+.section-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+
 /* Media query for desktop (responsive) */
 @media screen and  (min-width: 576px) {
     #type-intro {
