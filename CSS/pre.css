@@ -13,13 +13,13 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;    
 }
 
 .pre-cta {
     border-radius: 20px;
+    background: darkgray;
+    border:2px groove white;
 }
 
 .pre-cta a {
