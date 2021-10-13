@@ -27,46 +27,26 @@ body {
     left: 155px;
     background-color: rgba(196, 189, 188, 0.9);
     padding: 10px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
-.ham-links li {
+.hamlinks li {
     text-decoration: none;
     list-style: none;
     line-height: 2;
 }
-.ham-links li a {
+.hamlinks li a {
     color: black;
     font-size: 18px;
 }
 
-/* Top text and image */
-#type-intro {
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-    padding: 40px;
-    color: black;
-}
-
-.img-container 
-img{
-    width: 200px;
-    height: 200px;
-    border: 50%;
-    border-radius: 50%;
-    margin: auto;
-}
 /* Nav Bar  */
-#navigation {
-    visibility: hidden;
-    position: absolute;
-}
-
 #navbar-container {
 
-    height: 30px;
-    width: 100%;
+    height: 40px;
+    width: auto;
     background-color: black;
+    visibility: hidden;
 }
 
 #navbar-container ul {
@@ -83,13 +63,30 @@ img{
 
 .navli li a {
     display: inline;
-    font-size: 40px; 
+    font-size: 30px; 
     padding: 0 30px; 
     color: whitesmoke;
 }
 
-.navbar-links {
-    display: none;
+.navli a{
+        font-family: 'Nanum Myeongjo', serif;
+    }
+
+/* Top text and image */
+#type-intro {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    padding: 40px;
+    color: black;
+}
+
+.img-container 
+img{
+    width: 200px;
+    height: 200px;
+    border: 50%;
+    border-radius: 50%;
+    margin: auto;
 }
 
 /* Carousel images */
@@ -142,6 +139,10 @@ img{
         display: none;
     }
 
+    #navbar-container {
+        visibility: visible;
+    }
+
     #type-intro {
         font-size: 3rem;
         display: grid;
@@ -157,23 +158,7 @@ img{
         grid-column: 1/2;
         grid-row: 1/2;
     }
-/*  media query navigation bar */
-    #navigation {
-        visibility: visible;
-        position: relative;
-    }
-
-    #navbar-container {
-        height: 60px;
-    }
-
-    .navbar-links ul li {
-        font-size: 40px;
-    }
-    .navli a{
-        font-family: 'Nanum Myeongjo', serif;
-    }
-
+ 
     .img-1 {
         float: left;
     }
