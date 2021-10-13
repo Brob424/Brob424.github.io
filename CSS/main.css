@@ -6,6 +6,7 @@ body {
     line-height: 1.5;
 }
 
+/* Hamburger element */
 #hamburger {
     float: right;
     padding-right: 20px;
@@ -15,6 +16,28 @@ body {
     line-height: 0.5;
     font-weight: bold;
     color: black;
+}
+
+/* Hamburger toggle menu */
+#ham-menu {
+    height: 175px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    background-color: rgba(196, 189, 188, 0.9);
+    padding: 10px;
+    visibility: hidden;
+}
+
+.ham-links li {
+    text-decoration: none;
+    list-style: none;
+    line-height: 2;
+}
+.ham-links li a {
+    color: black;
+    font-size: 18px;
 }
 
 /* Top text and image */
@@ -44,7 +67,6 @@ img{
     height: 30px;
     width: 100%;
     background-color: black;
-    margin-top: 20px;
 }
 
 #navbar-container ul {
@@ -71,16 +93,16 @@ img{
 }
 
 /* Carousel images */
-#carousel-lang li {
+/* #carousel-lang li {
     position: absolute;
-}
+} */
 
 
-.carousel-inner img {
+/* .carousel-inner img {
     height: 190px;
     width: 60px;
 
-}
+} */
 
 
 /* About me and why I code section */
@@ -112,6 +134,10 @@ img{
 
 /* Media query for desktop (responsive) */
 @media screen and  (min-width: 576px) {
+    #ham-menu {
+        display: none;
+    }
+
     #hamburger {
         display: none;
     }
@@ -133,7 +159,6 @@ img{
     }
 /*  media query navigation bar */
     #navigation {
-        margin-top: 0;
         visibility: visible;
         position: relative;
     }

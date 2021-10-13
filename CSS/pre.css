@@ -21,7 +21,6 @@ body {
     border-radius: 20px;
     background: darkgray;
     border:2px groove white;
-    -webkit-box-reflect: below 15px;
 }
 
 .pre-cta a {
