@@ -12,7 +12,7 @@
 }
 
 #hamburger button {
-    position: relative:
+    position: relative;
     padding: 20px;
     background-color: white;
 }
@@ -44,9 +44,8 @@
 }
 
 #navbar-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 30px;
+
+    height: 40px;
     width: 100%;
     background-color: black;
     margin-top: 30px;
@@ -56,16 +55,30 @@
     list-style: none;
 }
 
+.navli {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navli li a {
+    display: inline;
+    font-size: 38px; 
+    padding: 0 20px; 
+    color: whitesmoke;
+}
+
 .navbar-links {
     display: none;
 }
 
-.navbar-links ul a {
-  color: whitesmoke;
-    
+/* Carousel images */
+#carousel-lang li {
+    position: absolute;
 }
 
-/* Carousel images */
 
 .carousel-inner img {
     height: 190px;
