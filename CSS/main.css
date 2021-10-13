@@ -1,5 +1,5 @@
 /* Global page setting */
-* {
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@
 #hamburger div{
     line-height: 0.5;
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
 }
 
 /* Top text and image */
@@ -22,17 +22,14 @@
     text-align: center;
     font-family: 'Special Elite', cursive;
     padding: 40px;
-    color: whitesmoke;
-    background-image: url(https://i.insider.com/5d0150e06fc9200b5a05f042?width=700);
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: black;
 }
 
-.img-container {
+.img-container 
+img{
     width: 200px;
     height: 200px;
     border: 50%;
-    background-color: red;
     border-radius: 50%;
     margin: auto;
 }
@@ -44,10 +41,10 @@
 
 #navbar-container {
 
-    height: 40px;
+    height: 30px;
     width: 100%;
     background-color: black;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #navbar-container ul {
@@ -64,8 +61,8 @@
 
 .navli li a {
     display: inline;
-    font-size: 38px; 
-    padding: 0 20px; 
+    font-size: 40px; 
+    padding: 0 30px; 
     color: whitesmoke;
 }
 
@@ -134,8 +131,9 @@
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
+/*  media query navigation bar */
     #navigation {
+        margin-top: 0;
         visibility: visible;
         position: relative;
     }
@@ -146,7 +144,9 @@
 
     .navbar-links ul li {
         font-size: 40px;
-
+    }
+    .navli a{
+        font-family: 'Nanum Myeongjo', serif;
     }
 
     .img-1 {

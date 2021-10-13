@@ -21,6 +21,7 @@ body {
     border-radius: 20px;
     background: darkgray;
     border:2px groove white;
+    -webkit-box-reflect: below 15px;
 }
 
 .pre-cta a {
@@ -31,7 +32,6 @@ h1 {
     padding: 30px 50px;
     font-family: 'Audiowide', cursive;
     background-clip: text;
-    animation-timing-function: ease-in-out;
 }
 /* animation */
 /* @keyframes {
