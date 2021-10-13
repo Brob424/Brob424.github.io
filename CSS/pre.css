@@ -31,5 +31,13 @@ h1 {
     padding: 30px 50px;
     font-family: 'Audiowide', cursive;
     background-clip: text;
+    animation-timing-function: ease-in-out;
 }
 /* animation */
+/* @keyframes {
+    
+    h1{
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+} */

@@ -11,6 +11,12 @@
     padding-right: 20px;
 }
 
+#hamburger button {
+    position: relative:
+    padding: 20px;
+    background-color: white;
+}
+
 #hamburger div{
     line-height: 0.5;
     font-weight: bold;
@@ -38,7 +44,7 @@
 }
 
 #navbar-container {
-    display: grid, none;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 30px;
     width: 100%;
@@ -68,14 +74,15 @@
 }
 
 
-
-
-
-
 /* About me and why I code section */
 
 #main-section {
     background: black;
+    padding: 20px;
+}
+
+#main-section h3 {
+    text-align: center;
 }
 
 #main-section p, h3 {
@@ -83,9 +90,12 @@
 }
 
 .section-image {
+    display: block;
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    border: 2px solid whitesmoke;    
+    margin: 10px auto;
 }
 
 
@@ -119,7 +129,6 @@
     }
 
     #navbar-container {
-        display: ;
         height: 60px;
     }
 
@@ -127,4 +136,14 @@
         font-size: 40px;
 
     }
+
+    .img-1 {
+        float: left;
+    }
+
+    .img-2 {
+        float: right;
+    }
+
 }
+
