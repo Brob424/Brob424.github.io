@@ -21,11 +21,11 @@ body {
 /* Hamburger toggle menu */
 #ham-menu {
     height: 175px;
-    width: 200px;
+    width: 175px;
     position: absolute;
     top: 35px;
-    left: 195px;
-    background-color: rgba(196, 189, 188, 0.9);
+    left: 220px;
+background-color: rgba(60, 60, 64, 0.9);
     padding: 10px;
     /* visibility: hidden; */
 }
@@ -36,7 +36,7 @@ body {
     line-height: 2;
 }
 .hamlinks li a {
-    color: black;
+    color: whitesmoke;
     font-size: 18px;
 }
 
@@ -87,6 +87,14 @@ img{
     border: 50%;
     border-radius: 50%;
     margin: auto;
+}
+
+/* Black divider */
+
+.black-div {
+    height: 20px;
+    width: auto;
+    background-color: black;
 }
 
 /* Carousel images */

@@ -18,6 +18,7 @@ h1 {
     background: url(https://png.pngtree.com/thumb_back/fw800/background/20210227/pngtree-starry-galaxy-starry-night-sky-halo-starlight-background-image_570290.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .projectslide {
@@ -27,12 +28,30 @@ h1 {
     border-radius: 20px;
     margin: 30px 0;
 }
-
+/* About projects text below */
 #project-exp {
     text-align: center;
+    font-size: 20px;
+}
+/* Code snippets with zoom function */
+#code-snip {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(3, 1.5fr);
+    gap: 10px;
 }
 
+.grid-snip {
+    height: 200px;
+    width: 200px;
+    background-color: turquoise;
+}
+
+/* Home button go back to the beginning */
+
+
 @media screen and (min-width: 576px){
+    /* About projects text below*/
     #project-exp {
         font-size: 30px;
     }
