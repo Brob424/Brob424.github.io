@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
     line-height: 1.5;
-
 }
 
 /* Hamburger element */
@@ -22,78 +21,56 @@
 /* Hamburger toggle menu */
 #ham-menu {
     height: 175px;
-    width: 175px;
+    width: 145px;
     position: absolute;
     top: 35px;
     left: 220px;
     background-color: rgba(60, 60, 64, 0.9);
     padding: 5px;
-    border-radius: 25%;
     display: none;
 }
 
 .hamlinks li {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 18px;
     list-style: none;
     line-height: 2;
 }
 .hamlinks li a {
+    position: relative;
     color: whitesmoke;
     font-size: 18px;
-}
-
-/* Nav Bar  */
-#navbar-container {
-
-    height: 35px;
-    width: auto;
-    background: rgba(0, 0, 0, 0.8);
-    visibility: hidden;
-}
-
-#navbar-container ul {
-    list-style: none;
-}
-
-.navli .end-links{
-    display: inline-block;
-    float: right;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navli li a {
     text-decoration: none;
-    display: inline;
-    font-size: 20px; 
-    padding: 0 10px; 
-    color: whitesmoke;
 }
 
-.navli li a:hover {
-    color: black;
-}
+/* font awesome mobile icons */
 
-
-.navli a{
-    font-family: 'Nanum Myeongjo', serif;
-}
-/* font awesome top icons */
-.faba-icons {
+ .fabicons {
     display: flex;
 }
-.faba-icons .fab {
-  padding: 10px;
+
+.fabicons li {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
 }
 
-.faba-icons .fab:hover {
+.fabicons li a {
     color: black;
-  
-}    
 
-.fab {
-     color: whitesmoke;
 }
+
+
+
+#navbar-container {
+    visibility: hidden;
+    padding: 0;
+}
+
 /* Top text and image */
 #type-intro {
     text-align: center;
@@ -102,7 +79,7 @@
     color: black;
 }
 
-.img-container img{
+.proimg{
     width: 200px;
     height: 200px;
     border: 50%;
@@ -110,32 +87,21 @@
     margin: auto;
 }
 
-/* Black divider */
-
-.black-div {
-    height: 15px;
-    width: auto;
-    background-color: black;
-}
-
-/* Carousel images */
-.d-block {
-    max-width: 100%;
-    height: auto;
-}
-/* #carousel-lang li {
+.backnyc {
+    visibility: hidden;
     position: absolute;
-} */
+    width: 0;
+}
+/* carousel */
+#carousel-lang {
+    background-image: linear-gradient(to bottom, white, black);
+}
 
+.carousel-item img {
+    height: 300px;
+}
 
-/* .carousel-inner img {
-    height: 190px;
-    width: 60px;
-
-} */
-
-
-/* About me and why I code section */
+/* About Me section */
 
 #main-section {
     background: black;
@@ -159,67 +125,237 @@
     margin: 10px auto;
 }
 
-/* Contact me form*/
 
-#contact-section h1 {
+
+
+
+@media screen and (min-width: 576px) {
+#hamburger {
+    display: none;
+}   
+
+#mobile-icons {
+    display: none;
+}
+
+
+#navbar-container {
+    height: 35px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.9);
+    visibility: visible;
+    padding: 0;
+}
+
+#navbar-container ul {
+    list-style: none;
+}
+
+.end-links{
+    display: inline;
+    float: right;
+}
+
+.faba-icons {
+    display: flex;
+}
+.faba-icons .fab {
+  padding: 10px;
+}
+
+.faba-icons .fab:hover {
+    color: black;
+  
+}
+
+
+.navli li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; 
+    padding: 0 15px; 
+    color: whitesmoke;
+}
+
+.navli li a:hover {
+    color: black;
+}
+
+
+.navli a{
+    font-family: 'Nanum Myeongjo', serif;
+    }
+
+
+.fab {
+        color: whitesmoke;
+}
+
+#type-intro {
+    padding: 0;
+}
+
+#type-intro h1 {
+    font-size: 3rem;
+}
+
+#type-intro p {
+    font-size: 2rem;
+}
+
+.intro-text{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    position: relative;
+    
+}
+
+.intro-text h1, p {
+    grid-column: 2 / 3;
     text-align: center;
-    padding-top: 15px;
-    font-family: 'Special Elite', cursive;
+    color: white;
+}
+
+#type-intro .proimg {
+    width: 350px;
+    height: 350px;
+    border: 50%;
+    border-radius: 50%;
+    margin: auto;
+    grid-column: 1/2;
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+}
+
+.backnyc {
+    height: 300px;
+    width: 100%; 
+    z-index: -2;
+    visibility: visible;
+}
+
+.intro-text .backnyc {
+    grid-column: 1/ span 4;
+    grid-row: 1/ span 3;
+    position: absolute;
+}
+
+#carousel-lang{
+    margin-top: 170px;
+    background-image:linear-gradient(to bottom, white, black);
+    height: 475px;
+    width: auto;
+    z-index: -2;
+}
+#carousel-lang button {
+    border-radius: 50%;
+    height: 25px;
+
+    
+}
+.carousel-control-prev {
+    margin: auto;
+}
+
+.carousel-control-next {
+    margin: auto;
+}
+
+.carousel-item {
+    display: block;
+    height: 300px;
+    width: 250px;
+    padding-top:50px;
+    border-radius: 50%;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    padding-top:50px;
+    
 }
 
 
-
-
-
-
-/* Media query for desktop (responsive) */
-@media screen and  (min-width: 576px) {
-    #ham-menu {
-        display: none;
-    }
-
-    #hamburger {
-        display: none;
-    }
-
-    #navbar-container {
-        visibility: visible;
-    }
-
-    #type-intro {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        /* grid-template-rows: 1fr 1fr; */
-    }
-
-    #type-intro h1 {
-        font-size: 3rem;
-    }
-
-    #type-intro p {
-        font-size: 2rem;
-    }
-
-    .intro-text {
-        grid-column: 2/3;
-        padding-top: 35px;
-    }
-/* 
-    .img-container{
-        grid-column: 1/2;
-        
-    } */
-
-    .img-container img {
-    }
- 
-    .img-1 {
-        float: left;
-    }
-
-    .img-2 {
-        float: right;
-    }
-
+/* Main section desktop */
+#main-section {
+    background: black;
+    padding: 20px;
 }
 
+#main-section h3 {
+    text-align: center;
+}
+
+#main-section p, h3 {
+    color: whitesmoke;
+}
+
+.section-image {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;    
+    margin: 10px auto;
+}
+#main-section {
+    background: black;
+    padding: 20px;
+}
+
+#main-section h3 {
+    text-align: center;
+}
+
+#main-section p, h3 {
+    color: whitesmoke;
+}
+
+.section-image {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;    
+    margin: 10px auto;
+}
+#main-section {
+    background: black;
+    padding: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#main-section h3 {
+    text-align: center;
+}
+
+#main-section p, h3 {
+    color: whitesmoke;
+}
+
+.section-image {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;    
+    margin: 10px auto;
+}
+
+#main-section section {
+    height: 500px;
+    font-size: 25px;
+}
+
+.img-1 {
+    float: left;
+}
+
+.img-2 {
+    float: right;
+}
+
+
+}
