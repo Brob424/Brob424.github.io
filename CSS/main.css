@@ -1,9 +1,10 @@
 /* Global page setting */
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     line-height: 1.5;
+
 }
 
 /* Hamburger element */
@@ -12,7 +13,7 @@ body {
     padding-right: 20px;
 }
 
-#hamburger div{
+#hamburger .ham-div { 
     line-height: 0.5;
     font-weight: bold;
     color: black;
@@ -25,9 +26,10 @@ body {
     position: absolute;
     top: 35px;
     left: 220px;
-background-color: rgba(60, 60, 64, 0.9);
-    padding: 10px;
-    /* visibility: hidden; */
+    background-color: rgba(60, 60, 64, 0.9);
+    padding: 5px;
+    border-radius: 25%;
+    display: none;
 }
 
 .hamlinks li {
@@ -43,9 +45,9 @@ background-color: rgba(60, 60, 64, 0.9);
 /* Nav Bar  */
 #navbar-container {
 
-    height: 40px;
+    height: 35px;
     width: auto;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.8);
     visibility: hidden;
 }
 
@@ -53,25 +55,45 @@ background-color: rgba(60, 60, 64, 0.9);
     list-style: none;
 }
 
-.navli {
-    display: flex;
-    justify-content: space-between;
+.navli .end-links{
+    display: inline-block;
+    float: right;
+    justify-content: flex-end;
     align-items: center;
 }
 
-
-
 .navli li a {
+    text-decoration: none;
     display: inline;
-    font-size: 30px; 
-    padding: 0 30px; 
+    font-size: 20px; 
+    padding: 0 10px; 
     color: whitesmoke;
 }
 
-.navli a{
-        font-family: 'Nanum Myeongjo', serif;
-    }
+.navli li a:hover {
+    color: black;
+}
 
+
+.navli a{
+    font-family: 'Nanum Myeongjo', serif;
+}
+/* font awesome top icons */
+.faba-icons {
+    display: flex;
+}
+.faba-icons .fab {
+  padding: 10px;
+}
+
+.faba-icons .fab:hover {
+    color: black;
+  
+}    
+
+.fab {
+     color: whitesmoke;
+}
 /* Top text and image */
 #type-intro {
     text-align: center;
@@ -80,8 +102,7 @@ background-color: rgba(60, 60, 64, 0.9);
     color: black;
 }
 
-.img-container 
-img{
+.img-container img{
     width: 200px;
     height: 200px;
     border: 50%;
@@ -92,12 +113,16 @@ img{
 /* Black divider */
 
 .black-div {
-    height: 20px;
+    height: 15px;
     width: auto;
     background-color: black;
 }
 
 /* Carousel images */
+.d-block {
+    max-width: 100%;
+    height: auto;
+}
 /* #carousel-lang li {
     position: absolute;
 } */
@@ -134,6 +159,16 @@ img{
     margin: 10px auto;
 }
 
+/* Contact me form*/
+
+#contact-section h1 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Special Elite', cursive;
+}
+
+
+
 
 
 
@@ -152,19 +187,30 @@ img{
     }
 
     #type-intro {
-        font-size: 3rem;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
+        /* grid-template-rows: 1fr 1fr; */
     }
+
+    #type-intro h1 {
+        font-size: 3rem;
+    }
+
+    #type-intro p {
+        font-size: 2rem;
+    }
+
     .intro-text {
         grid-column: 2/3;
         padding-top: 35px;
     }
-
+/* 
     .img-container{
         grid-column: 1/2;
-        grid-row: 1/2;
+        
+    } */
+
+    .img-container img {
     }
  
     .img-1 {
