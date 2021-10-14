@@ -1,3 +1,5 @@
-    $('#hamburger').on('click', function() {
-        $('#ham-menu').toggle()
-    });
+$('document').ready(function(){
+    $('.ham-tag').on('click', function(){
+        $('#ham-menu').toggle();
+    })
+})

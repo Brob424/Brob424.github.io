@@ -31,3 +31,9 @@ h1 {
 #project-exp {
     text-align: center;
 }
+
+@media screen and (min-width: 576px){
+    #project-exp {
+        font-size: 30px;
+    }
+}
