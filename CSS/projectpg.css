@@ -34,6 +34,14 @@ h1 {
     font-size: 20px;
     padding-bottom: 15px;
 }
+
+/* White divider */
+
+.white-div {
+    height: 100px;
+    width: 100%;
+}
+
 /* Code snippets with zoom function */
 #code-snip {
     display: grid;
@@ -50,13 +58,92 @@ h1 {
 }
 
 /* Home button go back to the beginning */
-#cta-home  {
-  
+#cta-home {
+    display: flex;
+    background-color: black;
+    padding-top: 10px;
+}
+
+#cta-home button {
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50px;
+}
+
+#cta-home button a {
+    text-decoration: none;
+    color: black;
+}
+#cta-home button a:hover {
+    color: grey;
+}
+
+.cta-home li {
+    display: inline;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.faba-icons li{
+    display: inline-flex;
+}
+
+.faba-icons li a {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 576px){
     /* About projects text below*/
     #project-exp {
         font-size: 30px;
+    }
+
+    #cta-home button {
+        font-size: 25px;
+        border-radius: 20px;
+        padding: 15px 30px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 300px;
+    }
+    
+    #cta-home button a {
+        text-decoration: none;
+        color: black;
+    }
+    #cta-home button a:hover {
+        color: grey;
+    }
+    
+    .cta-home li {
+        display: inline;
+        justify-items: flex-start;
+        align-items: center;
+    }
+    
+    .faba-icons li{
+        display: inline-flex;
+    }
+    
+    .faba-icons li a {
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .faba-icons li a:hover {
+        color: grey;
     }
 }
