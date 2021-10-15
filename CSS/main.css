@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     line-height: 1.5;
 }
 
@@ -22,6 +22,7 @@
 #ham-menu {
     height: 175px;
     width: 145px;
+    float: right;
     position: absolute;
     top: 35px;
     left: 220px;
@@ -66,6 +67,7 @@
 
 #navbar-container {
     visibility: hidden;
+    position: absolute;
     padding: 0;
 }
 
@@ -73,7 +75,6 @@
 #type-intro {
     text-align: center;
     font-family: 'Special Elite', cursive;
-    padding: 40px;
     color: black;
 }
 
@@ -82,22 +83,88 @@
     height: 200px;
     border: 50%;
     border-radius: 50%;
-    margin: auto;
 }
 
 .backnyc {
     visibility: hidden;
     position: absolute;
     width: 0;
-}
-/* carousel */
-#carousel-lang {
-    background-image: linear-gradient(to bottom, white, black);
+    height: 0;
 }
 
-.carousel-item img {
+#cards {
     height: 300px;
-    ;
+    background-image: linear-gradient(to bottom, white, black);   
+    position: relative;
+    perspective: 700px;
+    margin-top: 20px;
+}
+
+.card-1 {
+    height: 270px;
+    width: 200px;
+    position: absolute;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    left: 100px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform: rotateY(-45deg);
+   
+}
+.card-2 {
+    height: 250px;
+    width: 200px;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    position: absolute;
+    top:  0.1px;
+    right: 225px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform:rotateY(-45deg)
+    
+
+    
+}
+.card-3 {
+    height: 250px;
+    width: 200px;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    position: absolute;
+    left: 210px;
+    top: 0.1px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform: rotateY(-45deg);
+    
+}
+
+    
+.card-1 img {
+    height: 200px;
+    width: 200px;
+    opacity: 0.7;
+   
+}
+
+.card-2 img {
+    height: 200px;
+    width: 200px;
+    opacity: 0.7;
+}
+.card-3 img {
+    height: 200px;
+    width: 200px;
+    margin-top: 8px;
+    opacity: 0.7;
 }
 
 /* About Me section */
@@ -121,8 +188,70 @@
     width: 200px;
     border-radius: 50%;
     border: 2px solid whitesmoke;    
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 30px;
 }
+
+/* E-mail address */
+
+#e-mail {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#e-mail h3 {
+    color: black
+}
+
+.contact-me {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Special Elite', cursive;
+}
+
+/* Home button go back to the beginning */
+#cta-home {
+    display: flex;
+    background-color: black;
+    padding-top: 10px;
+}
+
+#cta-home button {
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50px;
+}
+
+#cta-home button a {
+    text-decoration: none;
+    color: black;
+}
+#cta-home button a:hover {
+    color: grey;
+}
+
+.cta-home li {
+    display: inline;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.fab-icons li{
+    display: inline-flex;
+}
+
+.fab-icons li a {
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
 
 
 
@@ -143,6 +272,7 @@
     width: auto;
     background: rgba(0, 0, 0, 0.9);
     visibility: visible;
+    position: relative;
     padding: 0;
 }
 
@@ -192,6 +322,7 @@
 
 #type-intro {
     padding: 0;
+    height: 350px;
 }
 
 #type-intro h1 {
@@ -224,14 +355,14 @@
     margin: auto;
     grid-column: 1/2;
     position: absolute;
-    top: 35px;
-    z-index: -1;
+    top: 3px;
+    z-index: 1;
 }
 
 .backnyc {
     height: 300px;
     width: 100%; 
-    z-index: -2;
+    z-index: -1;
     visibility: visible;
 }
 
@@ -240,40 +371,80 @@
     grid-row: 1/ span 3;
     position: absolute;
 }
-/* Carousel */
-#carousel-lang{
-    margin-top: 170px;
-    background-image:linear-gradient(to bottom, white, black);
-    height: 475px;
-    width: auto;
-    z-index: -2;
+
+#cards {
+    height: 500px;
+    background-image: linear-gradient(to bottom, white, black);   
+    position: relative;
+    perspective: 700px;
+    margin-top: 20px;
 }
 
-.carousel-control-prev {
-    margin: auto;
+.card-1 {
+    height: 270px;
+    width: 200px;
+    position: absolute;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    left: 470px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform: rotateY(0deg);
+   
 }
-
-.carousel-control-next {
-    margin: auto;
-}
-.carousel-inner {
-    margin: auto;
-}
-
-.carousel-item {
-    display: block;
-    height: 300px;
-    width: 250px;
-    margin: auto;
+.card-2 {
+    height: 250px;
+    width: 200px;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    position: absolute;
+    top:  0.1px;
+    left:235px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform:rotateY(-45deg)
     
-    padding-top: 50px;
+
+    
+}
+.card-3 {
+    height: 250px;
+    width: 200px;
+    background-image:linear-gradient(to bottom, rgba(136,139,141,0.3), rgba(67,70,75,0.3));
+    border-radius: 16px;
+    position: absolute;
+    left: 700px;
+    top: 0.1px;
+    filter: blur(1px);
+    box-shadow: 4px 4px;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    border-left: 1px groove rgb(136, 139, 141);
+    transform: rotateY(45deg);
+    
 }
 
-.carousel-item img {
-    height: 100%;
-    width: 100%;
-    padding-top:50px;
     
+.card-1 img {
+    height: 200px;
+    width: 200px;
+    opacity: 0.7;
+   
+}
+
+.card-2 img {
+    height: 200px;
+    width: 200px;
+    opacity: 0.7;
+}
+.card-3 img {
+    height: 185px;
+    width: 200px;
+    margin-top: 10px;
+    opacity: 0.7;
 }
 
 
@@ -285,7 +456,6 @@
 }
 
 .section-image {
-    display: block;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -330,9 +500,45 @@
     margin-top: 100px;
 }
 
-.contact-me {
-    text-align: center;
-    margin-top: 15px;
-    font-family: 'Special Elite', cursive;
+
+#cta-home button {
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 300px;
+}
+
+#cta-home button a {
+    text-decoration: none;
+    color: black;
+}
+#cta-home button a:hover {
+    color: grey;
+}
+
+.cta-home li {
+    display: inline;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.fab-icons li{
+    display: inline-flex;
+}
+
+.fab-icons li a {
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.fab-icons li a:hover {
+    color: grey;
 }
 }
+
