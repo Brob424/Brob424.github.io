@@ -29,6 +29,7 @@
     background-color: rgba(60, 60, 64, 0.9);
     padding: 5px;
     display: none;
+    border: 2px solid whitesmoke;
 }
 
 .hamlinks li {
@@ -45,6 +46,7 @@
     color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
+    text-align: center;
 }
 
 /* font awesome mobile icons */
@@ -61,7 +63,7 @@
 }
 
 .fabicons li a {
-    color: black;
+    color: grey;
 
 }
 
@@ -293,7 +295,7 @@
 }
 
 .faba-icons .fab:hover {
-    color: black;
+    color: grey;
   
 }
 
@@ -307,7 +309,7 @@
 }
 
 .navli li a:hover {
-    color: black;
+    color: grey;
 }
 
 

@@ -15,6 +15,7 @@ h1 {
 #grid-proslide {
     display: grid;
     grid-template-rows: repeat(3, 2fr);
+    background-color: black;
     background: url(https://png.pngtree.com/thumb_back/fw800/background/20210227/pngtree-starry-galaxy-starry-night-sky-halo-starlight-background-image_570290.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,11 +24,18 @@ h1 {
 
 .projectslide {
     height: 75px;
-    width: auto;
+    max-width: 100%;
     background-color: gray;
-    border-radius: 20px;
+    border-radius: 75px;
     margin: 30px 0;
 }
+
+
+.projectslide h3 {
+justify-content: center;
+align-content: center;
+}
+
 /* About projects text below */
 #project-exp {
     text-align: center;
@@ -54,7 +62,13 @@ h1 {
     height: 200px;
     width: 200px;
     background-color: turquoise;
+    border-radius: 50%;
+    border: 2px solid black;
     margin: auto;
+}
+
+.snip1:hover {
+    zoom: 1;
 }
 
 /* Home button go back to the beginning */
